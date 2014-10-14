@@ -39,7 +39,7 @@
         android:id="@+id/btn_dialog2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_dialog3"
+        android:layout_alignLeft="@+id/btn_dialog2"
         android:layout_below="@+id/btn_dialog"
         android:layout_marginTop="11dp"
         android:onClick="onClick2"
@@ -49,9 +49,9 @@
         android:id="@+id/btn_dialog3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_dialog"
+        android:layout_alignLeft="@+id/btn_dialog2"
         android:layout_below="@+id/btn_dialog2"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="23dp"
         android:onClick="onClick3"
         android:text="Click voor detail dialog" />
     

@@ -143,7 +143,32 @@ public class MainActivity extends Activity
                 }
             );
             return builder.create();
-         }
-         return null;
+            
+        case 1:
+            progressDialog = new ProgressDialog(this);
+            progressDialog.setIcon(R.drawable.ic_launcher);
+            progressDialog.setTitle("Downloading files...");
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            progressDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", 
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                    int whichButton)
+                    {
+                        Toast.makeText(getBaseContext(),
+                                "OK clicked!", Toast.LENGTH_SHORT).show();
+                    }
+            });
+            progressDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", 
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                        int whichButton)
+                    {
+                        Toast.makeText(getBaseContext(),
+                               "Cancel clicked!", Toast.LENGTH_SHORT).show();
+                    }
+            });
+            return progressDialog;
+        }        
+       return null;
    }
 }
