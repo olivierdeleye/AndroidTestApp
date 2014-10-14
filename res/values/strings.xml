@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestApp</string>
+    <string name="simple_text">Gewoon wat tekst !</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_service">Start service</string>
+    <string name="stop_service">Stop service</string>
+
+</resources>
