@@ -143,7 +143,7 @@ public class MainActivity extends Activity
                 }
             );
             return builder.create();
-            
+        //integer voor showDialog(int x)    
         case 1:
             progressDialog = new ProgressDialog(this);
             progressDialog.setIcon(R.drawable.ic_launcher);
